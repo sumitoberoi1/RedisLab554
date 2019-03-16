@@ -6,10 +6,10 @@ const getById = id => {
       if (person.length > 0) {
         resolve(person[0]);
       } else {
-        reject(new Error("Something went wrong"));
+        reject(new Error("Something went wrong "));
       }
     }, 5000);
   });
 };
 
-module.exports = {};
+module.exports = { getById };
